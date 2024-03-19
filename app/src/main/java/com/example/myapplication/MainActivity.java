@@ -34,18 +34,18 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setGeolocationEnabled(true);
         webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
 
-        class WebAppInterface {
-            Context mContext;
-
-            WebAppInterface(Context c) {
-                mContext = c;
-            }
-
-            @JavascriptInterface
-            public void showToast(String message) {
-                var builded = NotificationCompat.Builder
-            }
-        }
+//        class WebAppInterface {
+//            Context mContext;
+//
+//            WebAppInterface(Context c) {
+//                mContext = c;
+//            }
+//
+//            @JavascriptInterface
+//            public void showToast(String message) {
+//                var builded = NotificationCompat.Builder
+//            }
+//        }
 
         class GeoWebChromeClient extends WebChromeClient {
             private static final int RP_ACCESS_LOCATION = 1001;
